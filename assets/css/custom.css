@@ -1,3 +1,7 @@
+I'll update the CSS file first, then handle the footer markup note (which says index.html — but since I'm only editing `assets/css/custom.css` here, I'll replace the footer block as instructed).
+
+assets/css/custom.css
+
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 *{
@@ -250,20 +254,38 @@ body {
 
 /* Footer */
 footer {
-  background: #131313;
-  padding: 20px 0;
+  background: #232427;
+  border-top: 1px solid rgba(153, 0, 0, 0.4);
+  padding: 36px 0;
   text-align: center;
 }
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
 .footer__content p {
-  color: #888;
-  font-size: 14px;
-  letter-spacing: 1px;
+  color: #666;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+.footer__content span.sep {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background: #990000;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin: 0 10px;
+  position: relative;
+  top: -1px;
 }
 .footer__content a {
-  color: #990000;
+  color: #999;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 .footer__content a:hover {
-  color: #ff4422;
+  color: #cc2200;
 }

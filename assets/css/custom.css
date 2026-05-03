@@ -38,6 +38,9 @@ body {
 .fullscreen {
   position: relative;
   overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ── Navbar: frosted glass ── */
@@ -46,6 +49,16 @@ body {
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid rgba(153, 0, 0, 0.18);
+  z-index: 1;
+}
+
+.center-object {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ── Hero cycling text ── */

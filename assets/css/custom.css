@@ -24,6 +24,22 @@ body {
   background: #232427;
 }
 
+.background {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.fullscreen {
+  position: relative;
+  overflow: hidden;
+}
+
 /* ── Navbar: frosted glass ── */
 .navbar {
   background: rgba(19, 19, 19, 0.55);
@@ -85,6 +101,8 @@ body {
   height: auto;
   width: 550px;
   max-width: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .info {
